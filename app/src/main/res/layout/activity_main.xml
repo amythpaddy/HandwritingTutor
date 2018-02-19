@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.amyth_shekhar.tutor.MainActivity">
+    tools:context="com.example.amyth_shekhar.tutorgit.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.sdsmdg.harjot.vectormaster.VectorMasterView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="#449"
+        android:layout_alignParentTop="true"
+        android:elevation="4dp"
+        app:vector_src="@drawable/a"
+        android:id="@+id/char_display"/>
 
-</android.support.constraint.ConstraintLayout>
+    <com.example.amyth_shekhar.tutorgit.A_View
+        android:id="@+id/path_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a449"
+        android:elevation="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#a449"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

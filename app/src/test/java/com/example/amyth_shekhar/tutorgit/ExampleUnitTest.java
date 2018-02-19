@@ -1,4 +1,4 @@
-package com.example.amyth_shekhar.tutor;
+package com.example.amyth_shekhar.tutorgit;
 
 import org.junit.Test;
 
